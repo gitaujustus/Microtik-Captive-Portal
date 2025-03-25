@@ -60,7 +60,8 @@
 
 
 // callback.js
-import { getTransaction, removeTransaction } from './stkpush'; // Adjust path if needed
+// import { getTransaction, removeTransaction } from './stkpush'; // Adjust path if needed
+const { getTransaction, removeTransaction } = require('./stkpush');
 
 /**
  * Handles M-Pesa callback, retrieves stored data, and processes successful payments
@@ -153,4 +154,5 @@ async function handleFailedTransaction(transactionData) {
     // Implement error handling logic here
 }
 
-export default { mpesaCallback };
+// export default { mpesaCallback };
+module.exports = { mpesaCallback };

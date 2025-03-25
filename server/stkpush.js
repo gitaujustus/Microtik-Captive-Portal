@@ -126,7 +126,7 @@ function removeTransaction(checkoutRequestID) {
 /**
  * Generates an access token for M-Pesa API authentication
  * @returns {string} Access token
- */
+ */ 
 async function generateAccessToken() {
     const consumer_key = process.env.MPESA_CONSUMER_KEY;
     const consumer_secret = process.env.MPESA_CONSUMER_SECRET;
